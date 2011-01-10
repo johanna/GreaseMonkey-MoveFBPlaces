@@ -5,14 +5,17 @@ TODO:
 - Make sure all new feed items appears on top of sidebar list
 - Better identification of the feed items
 
-INSTALLATION:
+INSTALLATION
 
-1. Install GreaseMonkey 
+Supported browsers: Firefox (and possibly Chrome)
+
+1. Install GreaseMonkey
+
 https://addons.mozilla.org/en-US/firefox/addon/748/
 
 Make sure the little monkeyface in the bottom right corner of the browser is happy and colored by clicking it.
 
-2. In Firefox, go to
+2. Go to
 http://placeholder.se/code/GreaseMonkey-MoveFBPlaces/gm_move_fbplaces.user.js
 
 
