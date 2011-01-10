@@ -30,21 +30,19 @@ function hidePlaces(){
 			
 			$timestamp = $place.find('.timestamp:eq(0)').clone();
 	
-			$a = $user.clone();
-			$a.html($image);
-			$a.css({float:'left',margin:'0 10px 0 0'});
-			$li.append($a);
+			$image_a = $user.clone();
+			$image_a.html($image);
+			$image_a.css({float:'left',margin:'0 10px 0 0'});
+			$li.append($image_a);
 	
 			$u = $('<div></div>');
 			$u.css({width:'170px;'});
+			$u.append($user);
+			$li.append($u);
 	
 			$v = $('<div></div>');
 			$v.css({width:'170px'});
-
-			$u.append($user);
 			$v.append($venue);
-
-			$li.append($u);
 			$li.append($v);
 
 			$ts = $('<div></div>');
