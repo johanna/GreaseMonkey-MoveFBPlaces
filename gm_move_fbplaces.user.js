@@ -41,15 +41,15 @@ function hidePlaces(){
 			$v = $('<div></div>');
 			$v.css({width:'170px'});
 
-			$user.clone().appendTo($u);
-			$venue.clone().appendTo($v);
+			$u.append($user);
+			$v.append($venue);
 
 			$li.append($u);
 			$li.append($v);
 
 			$ts = $('<div></div>');
 			$ts.css({color:'#999'});
-			$timestamp.clone().appendTo($ts);
+			$ts.append($timestamp);
 			$li.append($ts);
 	
 			if(index == 0){
