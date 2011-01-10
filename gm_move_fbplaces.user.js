@@ -24,31 +24,29 @@ function hidePlaces(){
 
 			$venue = $place.find('h6 a:eq(1)').clone();
 			$user = $place.find('h6 a:eq(0)').clone();
-
 			$image = $place.find('a.UIImageBlock_MED_Image img').clone(); 
-			$image.css({width:'25px', height:'25px'});
-			
 			$timestamp = $place.find('.timestamp:eq(0)').clone();
 	
+			$image.css({width:'25px', height:'25px'});
 			$image_a = $user.clone();
 			$image_a.html($image);
 			$image_a.css({float:'left',margin:'0 10px 0 0'});
 			$li.append($image_a);
 	
-			$u = $('<div></div>');
-			$u.css({width:'170px;'});
-			$u.append($user);
-			$li.append($u);
+			$user_wrapper = $('<div></div>');
+			$user_wrapper.css({width:'170px;'});
+			$user_wrapper.append($user);
+			$li.append($user_wrapper);
 	
-			$v = $('<div></div>');
-			$v.css({width:'170px'});
-			$v.append($venue);
-			$li.append($v);
+			$venue_wrapper = $('<div></div>');
+			$venue_wrapper.css({width:'170px'});
+			$venue_wrapper.append($venue);
+			$li.append($venue_wrapper);
 
-			$ts = $('<div></div>');
-			$ts.css({color:'#999'});
-			$ts.append($timestamp);
-			$li.append($ts);
+			$ts_wrapper = $('<div></div>');
+			$ts_wrapper.css({color:'#999'});
+			$ts_wrapper.append($timestamp);
+			$li.append($ts_wrapper);
 	
 			if(index == 0){
 				$('#leftCol .addedPlaces ul').prepend($li);
