@@ -1,0 +1,21 @@
+Moves Facebook places from feed to sidebar. 
+
+TODO:
+- Catch fb-events in a better way
+- Make sure all new feed items appears on top of sidebar list
+- Better identification of the feed items
+
+INSTALLATION:
+
+1. Install GreaseMonkey 
+https://addons.mozilla.org/en-US/firefox/addon/748/
+
+Make sure the little monkeyface in the bottom right corner of the browser is happy and colored by clicking it.
+
+2. In Firefox, go to
+http://placeholder.se/code/greasemonkey/gm_move_fbplaces.user.js
+
+
+
+
+
